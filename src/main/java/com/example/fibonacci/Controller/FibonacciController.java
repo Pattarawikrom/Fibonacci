@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class FibonacciController {
     private final FibonacciService fibonacciService;
 
-    @PostMapping("/calculate")
+    @PostMapping("/calc")
     public ResponseEntity<String> requestFibonacciSequence(@RequestParam int length){
 
         try{
